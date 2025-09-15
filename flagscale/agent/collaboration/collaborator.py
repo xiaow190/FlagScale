@@ -376,7 +376,7 @@ class Collaborator:
             )
             return False
 
-    def read_environment(self, name: str) -> Optional[Union[Dict[str, str], str]]:
+    def read_environment(self, name: str = None) -> Optional[Union[Dict[str, str], str]]:
         """
         read environment information from Redis hash storage.
 
